@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFF;
+    text-shadow: 1px 1px 2px black;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.fundo {
+    width: 100%;
+    height: 100vh;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #000;
+    background-color: aquamarine;
+    text-shadow: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.8;
+}
+.fundo h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+input[type="text"], input[type="submit"], #aviso {
+    height: 50px;
+    width: 300px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    padding: 10px;
+    text-shadow: none;
+    color: #000;
+    outline: 0;
+}
+input[type="submit"] {
+    background-color: aqua;
+    font-weight: bold;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+#aviso {
+    border: 1px solid red;
+    color: #FFF;
+    background-color: red;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    display: none;
+}
+a.sair {
+    border-radius: 8px;
+    background-color: aqua;
+    color: #000;
+    font-size: 15px;
+    padding: 5px 15px;
+    outline: none;
+    border: none;
+    text-shadow: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+}
+a.sair:hover {
+    background-color: rgb(7, 116, 116);
+    color: #FFF;
+}
+.relogio {
+    font-size: 80px;
+    font-weight: bold;
+}
+.frase_cumprimen {
+    font-size: 40px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px;
+    color: rgb(206, 238, 238);
+}
+.cumprimen {
+    height: auto;
+    width: 200px;
+    color: rgb(206, 238, 238);
+}
+.frase {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 10%;
+    text-align: center;
+    cursor: pointer;
+    padding: 0;
+}
+.autor {
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+}
+.block {
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+    transition: all ease 2s;
+}
+.digital {
+    font-size: 80px;
+    width: 320px;
+    text-align: center;
+    letter-spacing: -1px;
+    display: flex;
+    justify-content: space-between;
+}
+.digital span {
+    color: rgb(206, 238, 238);
+}
+.digital .h,
+.digital .m,
+.digital .s {
+    width: auto;
+    text-align: center;
+}
+
+@media (min-width: 1000px) and (max-width: 2000px) {
+    .frase {
+        height: 80px !important;
+    }
+}
